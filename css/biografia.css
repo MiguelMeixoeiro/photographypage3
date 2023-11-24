@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu {
+    display: none;
+    background-color: black;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav {
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.cosasbonikas{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+    
+}
+.container {
+    flex: 1;
+    display: flex;
+    background-color: black;
+}
+
+#texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    max-width: 50%; /* Ajusta el ancho del texto al 50% */
+}
+
+#imagen {
+    flex: 1;
+    background: url('../fotios/IMG_0883.JPG');
+    background-size: cover;
+    -webkit-filter: sepia();
+    max-width: 50%; 
+}
+#botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+#botones button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    margin-top: 10px; /* Espacio entre los botones */
+}
+
+
+#botones, #texto {
+    transition: color 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #texto, #imagen {
+        width: 100%;
+        max-width: 100%; 
+    }
+    nav button {
+        display: none;
+    }
+    #botones {
+    margin-top: 10px; /* Ajusta el espacio en dispositivos móviles */
+}
+
+#botones button {
+    font-size: 12px; /* Ajusta el tamaño del texto en dispositivos móviles */
+    margin-top: 8px; /* Espacio entre los botones en dispositivos móviles */
+}
+#botones, #texto {
+    transition: color 0.5s ease;
+}
+}

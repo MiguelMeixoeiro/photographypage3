@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/biografia.css">
+    <title>Biografia</title>
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../fotios/LOGO-INCREIBLE-small.png" />
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <button onclick="navigateTo('index')">Inicio</button>
+            <button onclick="navigateTo('formulario')">formulario</button>
+            <button onclick="navigateTo('Galeria')">Galeria</button>
+        </nav>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="navigateTo('index')">Inicio</a></li>
+            <li><a href="#" onclick="navigateTo('formulario')">Inscripcion</a></li>
+            <li><a href="#" onclick="navigateTo('Galeria')">Galeria</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+         <div class="cosasbonikas">
+        <div class="half" id="texto">
+            <h2>Biografia</h2>
+            <p>Miguel Meixoeiro, prodigioso fotógrafo nacido en las enigmáticas tierras de una aldea de Pontevedra,
+                forjó su destreza capturando la esencia de mundos invisibles. Con su lente mágica,
+                reveló la danza de las sombras en dimensiones paralelas y retrató la luz de las emociones humanas.
+                Su obra, un lienzo de sueños y realidades entrelazadas,
+                le otorgó el título de "Cazador de Instantes" en la comunidad artística.
+                Meixoeiro desafía las leyes de la percepción, fusionando lo tangible con lo etéreo, 
+                dejando un legado visual que trasciende los límites de lo ordinario.<br>
+                <br><br>
+                Podras ver una muestra de su arte registrandote.</p>
+                <br><br>
+                pincha en el botón en reproducir cancion para gozar mas facetas de mi arte.
+        </div>
+        <div> 
+            <audio id="audioPlayer" loop>
+                <source src="../Dos Ms.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <!-- Cambia el texto del botón a "Reproducir Canción" -->
+            <button class="button2" id="musica" onclick="togglePlayPause()">Reproducir Canción</button>
+            <button id="botonCambiarColor" onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
+        </div>
+       
+         </div>
+        <div class="half" id="imagen"></div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mi Página. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/biografia.js"></script>
+</body>
+</html>
+
